@@ -197,6 +197,14 @@ void MediaPlayer::setSurface(ANativeWindow *window)
     m_initialized = true;
 }
 
+void MediaPlayer::expose()
+{
+    if (m_window) {
+        gst_video_overlay_expose(GST_VIDEO_OVERLAY (msp_pipeline.get()));
+        gst_video_overlay_expose(GST_VIDEO_OVERLAY (msp_pipeline.get()));
+    }
+}
+
 void MediaPlayer::releaseSurface()
 {
     if (m_window != 0) {

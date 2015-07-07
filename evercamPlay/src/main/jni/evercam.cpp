@@ -11,6 +11,7 @@
 
 #include "mediaplayer.h"
 #include "eventloop.h"
+#include "debug.h"
 
 GST_DEBUG_CATEGORY_STATIC (debug_category);
 #define GST_CAT_DEFAULT debug_category
@@ -242,13 +243,6 @@ void gst_native_request_sample (JNIEnv* env, jobject thiz, jstring format) {
         return;
 
     const char *fmt = env->GetStringUTFChars (format, NULL);
-
-    //FIXME: need to delete these handles (leak)
-    /*SampleFailed *sample_failed = new SampleFailed(data);
-    SampleReady *sample_ready = new SampleReady(data);
-
-    data->player->subscriberSampleReady(sample_ready);
-    data->player->subscriberSampleFailed(sample_failed);*/
     data->player->requestSample(fmt);
 
     env->ReleaseStringUTFChars (format, fmt);
@@ -278,6 +272,7 @@ static void gst_native_surface_init (JNIEnv *env, jobject thiz, jobject surface)
     if (!data) return;
     ANativeWindow *new_native_window = ANativeWindow_fromSurface(env, surface);
     GST_DEBUG ("Received surface %p (native window %p)", surface, new_native_window);
+    data->player->releaseSurface();
     data->player->setSurface(new_native_window);
 }
 
@@ -285,13 +280,20 @@ static void gst_native_surface_finalize (JNIEnv *env, jobject thiz) {
     CustomData *data = GET_CUSTOM_DATA (env, thiz, custom_data_field_id);
     if (!data) return;
     data->player->stop();
-    data->player->releaseSurface();
+}
+
+static void gst_native_expose(JNIEnv *env, jobject thiz) {
+    CustomData *data = GET_CUSTOM_DATA (env, thiz, custom_data_field_id);
+    if (!data) return;
+    LOGD("Expose");
+    data->player->expose();
 }
 
 /* List of implemented native methods */
 static JNINativeMethod native_methods[] = {
     { "nativeInit", "()V", (void *) gst_native_init},
     { "nativeFinalize", "()V", (void *) gst_native_finalize},
+    { "nativeExpose", "()V", (void *) gst_native_expose},
     { "nativePlay", "()V", (void *) gst_native_play},
     { "nativePause", "()V", (void *) gst_native_pause},
     { "nativeRequestSample", "(Ljava/lang/String;)V", (void *) gst_native_request_sample},

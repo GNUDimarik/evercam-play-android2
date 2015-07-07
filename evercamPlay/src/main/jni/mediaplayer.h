@@ -16,7 +16,7 @@ class MediaPlayer;
 typedef struct {
     GstCaps    *caps;             /* Target frame caps */
     GstSample  *sample;           /* Sample for conversion */
-    MediaPlayer *player;             /* Global data for call java stuff */
+    MediaPlayer *player;          /* Global data for call java stuff */
 } ConvertSampleContext;
 
 class MediaPlayer
@@ -40,6 +40,7 @@ public:
     void setSampleReadyHandler(SampleReadyHandler handler);
     void setSampleFailedHandler(SampleFailedHandler handler);
     void setSurface(ANativeWindow *window);
+    void expose();
     void releaseSurface();
     bool isInitialized() const;
 private:

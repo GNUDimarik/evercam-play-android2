@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.OrientationEventListener;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
@@ -153,6 +154,8 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
     private KeenClient client;
     private String username = "";
 
+    private OrientationEventListener mOritentationListener;
+
     /**
      * Gstreamer
      */
@@ -167,6 +170,7 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
     private static native boolean nativeClassInit(); // Initialize native class: cache Method IDs for callbacks
     private native void nativeSurfaceInit(Object surface);
     private native void nativeSurfaceFinalize();
+    private native void nativeExpose();
     private long native_custom_data;      // Native code will use this to keep private data
 
     private final int TCP_TIMEOUT = 10 * 1000000; // 10 seconds in micro seconds
@@ -861,7 +865,8 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
     {
         Log.d("GStreamer", "Surface changed to format " + format + " width " + width + " height " + height);
         onMediaSizeChanged(width, height);
-        nativeSurfaceInit(surfaceholder.getSurface());
+        //nativeSurfaceInit(surfaceholder.getSurface());
+        nativeExpose();
     }
 
     @Override
