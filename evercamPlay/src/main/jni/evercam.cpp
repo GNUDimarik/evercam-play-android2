@@ -224,7 +224,7 @@ static void gst_native_play (JNIEnv* env, jobject thiz) {
 static void gst_native_pause (JNIEnv* env, jobject thiz) {
     CustomData *data = GET_CUSTOM_DATA (env, thiz, custom_data_field_id);
     if (!data) return;
-    data->player->pause();
+    data->player->stop();
 }
 
 /* Set playbin's URI */
