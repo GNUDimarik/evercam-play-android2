@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Evercam Play</string>
+    <string name="empty"/>
+    <string name="current_video_path"/>
+    <string name="local_service_started">local_service_started</string>
+    <string name="local_service_stopped">local_service_stopped</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app</string>
+    <string name="already_registered">Device has already been registered on the server</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you\'ve got a message!</string>
+    <string name="gcm_error">From GCM: error (%1$s)</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server</string>
+    <string name="server_registered">From Demo Server:The device was successfully added!</string>
+    <string name="server_unregistered">From Demo Server:The device was successfully removed!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s)</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="accounts">Accounts</string>
+    <string name="live">Live</string>
+
+    <!-- Text on camera -->
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="reconnecting">Reconnecting&#8230;</string>
+
+    <!-- General -->
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+    <string name="ok">OK</string>
+    <string name="notNow">NOT NOW</string>
+    <string name="settings_capital">SETTINGS</string>
+    <string name="play">Play</string>
+    <string name="remove">Remove</string>
+    <string name="prefix_http">http://</string>
+    <string name="dialog_title_warning">Warning</string>
+    <string name="view_in_gallery">VIEW</string>
+
+    <!-- Preferences -->
+    <string name="title_camera_per_row">Cameras per row</string>
+    <string name="title_awake_time">Sleep</string>
+    <string name="summary_awake_time">Default</string>
+    <string name="prefs_never">Never</string>
+    <string name="summary_awake_time_prefix">After</string>
+    <string name="summary_awake_time_suffix">of inactivity</string>
+    <string name="title_force_landscape">Force landscape for live view</string>
+    <string name="show_offline_camera">Show offline cameras</string>
+    <string name="category_general">General</string>
+    <string name="category_about">About</string>
+    <string name="prefs_title_version">Version</string>
+    <string name="prefs_title_about">About Evercam</string>
+    <string name="evercam_url">http://www.evercam.io</string>
+    <string name="title_activity_recording_web">Recordings</string>
+    <string name="title_activity_about_web">About Evercam</string>
+
+    <!-- Menu -->
+    <string name="menu_settings">Settings</string>
+    <string name="menu_manage_accounts">Manage Accounts</string>
+    <string name="menu_about">About</string>
+    <string name="menu_logout">Sign Out</string>
+    <string name="menu_feedback">Send Feedback</string>
+    <string name="menu_refresh">Refresh All</string>
+    <string name="menu_add_camera">Add Camera</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_edit">Edit</string>
+    <string name="title_activity_add_camera">Add Camera</string>
+    <string name="title_activity_view_camera">Camera Details</string>
+    <string name="title_activity_scan">Network Scan</string>
+    <string name="title_release_notes">Release Notes</string>
+    <string name="title_settings">Settings</string>
+    <string name="menu_delete_camera">Remove Camera</string>
+    <string name="menu_edit_camera">Edit Camera</string>
+    <string name="menu_local_storage">Local Storage</string>
+    <string name="menu_view_camera">View Details</string>
+    <string name="menu_view_snapshot">Saved Images</string>
+    <string name="menu_create_shortcut">Add to homescreen</string>
+    <string name="menu_view_recordings">View Recordings</string>
+    <string name="menu_cancel_scan">Cancel</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">E-Play Feedback</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="wifi">WiFi</string>
+    <string name="three_g">3G</string>
+    <string name="unknown">Unknown</string>
+    <string name="feedback_from">From:</string>
+    <string name="hint_full_name">Name</string>
+
+    <!-- Intent action data-->
+    <string name="data_scheme">evercam</string>
+    <string name="data_host">cameras</string>
+    <string name="data_path">/streams</string>
+
+</resources>
+

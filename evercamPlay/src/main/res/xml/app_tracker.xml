@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- If true, treat events as test events and don't send to Google -->
+    <bool name="ga_dryRun">false</bool>
+
+    <string name="ga_trackingId">UA-52483995-1</string>
+
+    <!-- The screen names that will appear in reports -->
+    <screenName name="io.evercam.androidapp.CamerasActivity">
+        Camera Grid View
+    </screenName>
+    <screenName name="io.evercam.androidapp.SlideActivity">
+        Welcome Page
+    </screenName>
+    <screenName name="io.evercam.androidapp.video.VideoActivity">
+        Video View
+    </screenName>
+    <screenName name="io.evercam.androidapp.MainActivity">
+        Evercam Play Entrance
+    </screenName>
+    <screenName name="io.evercam.androidapp.LoginActivity">
+        Login
+    </screenName>
+    <screenName name="io.evercam.androidapp.SignUpctivity">
+        Create Account
+    </screenName>
+    <screenName name="io.evercam.androidapp.ReleaseNotesActivity">
+        Release Notes
+    </screenName>
+    <screenName name="io.evercam.androidapp.ScanActivity">
+        Scan For Camera
+    </screenName>
+    <screenName name="io.evercam.androidapp.CameraPrefsActivity">
+        Cameras Preferences
+    </screenName>
+    <screenName name="io.evercam.androidapp.ManageAccountsActivity">
+        Manage Accounts
+    </screenName>
+    <screenName name="io.evercam.androidapp.FeedbackActivity">
+        Feedback Page
+    </screenName>
+    <screenName name="io.evercam.androidapp.ViewCameraActivity">
+        View Camera Detail
+    </screenName>
+    <screenName name="io.evercam.androidapp.LocalStorageActivity">
+        Local Storage
+    </screenName>
+    <screenName name="io.evercam.androidapp.AddEditCameraActivity">
+        Add/Edit Camera
+    </screenName>
+    <screenName name="io.evercam.androidapp.recordings.RecordingWebView">
+        Recordings
+    </screenName>
+
+
+</resources>

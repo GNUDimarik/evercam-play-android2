@@ -1,0 +1,74 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo"> <!-- Theme.DeviceDefault -->
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:editTextBackground">@drawable/evercamtheme_edit_text_holo_dark</item>
+        <!-- <item name="android:windowContentOverlay">@drawable/actionbar_shadow</item> -->
+    </style>
+
+    <style name="ActionBarOverlayTheme" parent="AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+    </style>
+
+    <style name="ThemeActivityDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar"> <!--  -->
+        <item name="android:choiceMode">multipleChoiceModal</item>
+    </style>
+
+    <style name="ThemeActivityNoActionBarFullscreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen"> <!--  -->
+        <item name="android:choiceMode">multipleChoiceModal</item>
+    </style>
+
+    <style name="ThemeDialogNoTitle" parent="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth"> <!-- Theme.DeviceDefault.Dialog.NoActionBar.MinWidth -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar"> <!-- Widget.DeviceDefault.ActionBar -->
+        <!--
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:background">@color/slidemenu_listitem_background_color</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        -->
+
+        <item name="android:horizontalSpacing">15sp</item>
+        <item name="android:background">@drawable/title_background</item>
+    </style>
+
+    <style name="ActionBarTitle">
+        <item name="android:textColor">#9D9D9D</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ThemeActivitySplash" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen"> <!--  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="Heading">
+        <item name="android:textColor">@android:color/holo_blue_bright</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="SignupFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>

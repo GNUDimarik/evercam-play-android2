@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+    <!--
+    <item
+        android:id="@+id/slidemenu_settings"
+        android:icon="@drawable/ic_action_settings"
+        android:title="@string/menu_settings">
+    </item>
+    <item
+        android:id="@+id/slidemenu_manage"
+        android:icon="@drawable/ic_person"
+        android:title="@string/menu_manage_accounts">
+    </item>
+    <item
+        android:id="@+id/slidemenu_about"
+        android:icon="@drawable/ic_action_about"
+        android:title="@string/menu_about">
+    </item>
+    <item
+        android:id="@+id/slidemenu_logout"
+        android:icon="@drawable/ic_navigation_cancel"
+        android:title="@string/menu_logout">
+    </item>
+    -->
+
+</menu>

@@ -1,0 +1,128 @@
+<h4>Evercam Play - IP Camera Viewer</h4>
+
+
+<h5>1.4.1 - 1.4.4</h5>
+<ul>
+    <li>- Improved camera list loading speed<br/></li>
+    <li>- Now you can take snapshot from paused video<br/></li>
+    <li>- Removed Hikvision local storage<br/></li>
+    <li>- Improvements on network discovery, added ONVIF support<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.4</b>
+<ul>
+	<li><br/>- Show offline cameras on/off in Settings<br/></li>
+	<li>- Improved add & edit camera, removed local IP support<br/></li>
+    <li>- Improvements around taking snapshot and stream loading speed<br/></li>
+    <li>- Fix incorrect shortcut icon<br/></li>
+    <li>- More responsive desktop shortcut<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.2.9 - 1.3</b>
+<ul>
+	<li><br/>- Browse recorded snapshots<br/></li>
+	<li>- Improved feedback and account management<br/></li>
+	<li>- Default camera per row to be 1 for new users<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.8</b>
+<ul>
+	<li><br/>- Home screen shortcut link to single camera live view<br/></li>
+	<li>- Added Evercam account in Android account settings<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.7</b>
+<ul>
+	<li><br/>- Added view camera details option in live view<br/></li>
+	<li>- Bug fixes around scanning for cameras<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.4 - 1.2.6</b>
+<ul>
+	<li><br/>- Now you can take snapshots from your cameras and save them locally<br/></li>
+	<li>- Force landscape option in Settings<br/></li>
+	<li>- Bug fixes related to pause & play camera live view<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.3</b>
+<ul>
+	<li><br/>- Port range check for add/edit camera<br/></li>
+	<li>- Added date & time to the camera live view screen<br/></li>
+	<li>- UI changes on camera grid view<br/></li>
+	<li>- Now you can send us feedback within the app<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.2</b>
+<ul>
+	<li><br/>- Added warning dialog before leaving scanning screen<br/></li>
+	<li>- Fixed a crash during scanning with Android 4.4<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.1</b>
+<ul>
+	<li><br/>- Fixed screen rotate issue when scanning for cameras<br/></li>
+	<li>- Added no thumbnail image in scanning result<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.0</b>
+<ul>
+	<li><br/>- Improved scanning for cameras, it's now faster<br/></li>
+	<li>- Fixed bug with Hikvision local storage<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.8 & 1.1.9</b>
+<ul>
+	<li><br/>- Camera list loading is faster now<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.7</b>
+<ul>
+	<li><br/>- First version of Hikvision local storage, you can view previously recorded footage within the app<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.6</b>
+<ul>
+	<li><br/>- Now you can remove cameras that are shared with you from your account<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.5</b>
+<ul>
+	<li><br/>- Now we support more camera vendors & models<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.4</b>
+<ul>
+	<li><br/>- When you add a camera, we now check whether we can connect to the camera before adding it<br/></li>
+	<li>- Bug fixes related to edit and remove camera.<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.3</b>
+<ul>
+	<li><br/>- The camera list now loads faster<br /></li>
+	<li>- You can now see the details of cameras shared with you<br/></li>
+	<li>- When adding cameras, you can now test local & external snapshots<br/></li>
+	<li>- We've added a setting for screen sleep time<br/></li>
+	<li>- Many small bug fixes<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.2</b>
+<ul>
+	<li><br/>- Add your IP camera<br /></li>
+	<li>- Vendor/model details are now pre-populated when adding a camera<br/></li>
+	<li>- Update or remove your connected IP cameras<br/></li>
+	<li>- Scan your local network for IP cameras<br/></li>
+	<li>- Supports digest authentication<br/></li>
+	<li>- Sign in with either your email or Evercam username<br/></li>
+	<li>- Now using thumbnails for scanned cameras<br/></li>
+</ul>
+<br />
+<b>Version 1.1.1</b>
+<br/>
+<ul>
+	<li>- You can now view multiple Evercam accounts<br/></li>
+	<li>- Added ability to choose number of cameras per row</li>
+</ul>
+
+<br/><br />Let us know what you think. Send any suggestions or feedback to play@evercam.io<br/>
