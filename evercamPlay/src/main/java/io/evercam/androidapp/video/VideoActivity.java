@@ -154,8 +154,6 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
     private KeenClient client;
     private String username = "";
 
-    private OrientationEventListener mOritentationListener;
-
     /**
      * Gstreamer
      */
@@ -856,8 +854,6 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
     public void surfaceCreated(SurfaceHolder surfaceHolder)
     {
         Log.d("GStreamer", "Surface created: " + surfaceHolder.getSurface());
-
-        nativeSurfaceInit(surfaceHolder.getSurface());
     }
 
     @Override
@@ -865,7 +861,7 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
     {
         Log.d("GStreamer", "Surface changed to format " + format + " width " + width + " height " + height);
         onMediaSizeChanged(width, height);
-        //nativeSurfaceInit(surfaceholder.getSurface());
+        nativeSurfaceInit(surfaceHolder.getSurface());
         nativeExpose();
     }
 
@@ -919,6 +915,7 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
 
     private void restartPlay()
     {
+
         nativePlay();
     }
 
@@ -1267,8 +1264,8 @@ public class VideoActivity extends ParentActivity implements SurfaceHolder.Callb
                 //View gets played, show time count, and start buffering
                 isPlayingJpg = false;
                 hideProgressView();
-                surfaceView.setVisibility(View.VISIBLE);
                 imageView.setVisibility(View.GONE);
+                surfaceView.setVisibility(View.VISIBLE);
                 startTimeCounter();
 
                 //And send to Google Analytics

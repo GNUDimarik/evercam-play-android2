@@ -274,6 +274,9 @@ static void gst_native_surface_init (JNIEnv *env, jobject thiz, jobject surface)
     GST_DEBUG ("Received surface %p (native window %p)", surface, new_native_window);
     data->player->releaseSurface();
     data->player->setSurface(new_native_window);
+
+    if (!new_native_window)
+        handle_stream_loading_error();
 }
 
 static void gst_native_surface_finalize (JNIEnv *env, jobject thiz) {
